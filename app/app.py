@@ -42,13 +42,13 @@ elif page == "Dashboard":
     with col1:
         st.subheader("Average Arrival Delay by Airport")
         image1 = Image.open('charts/average_arrival_delay.png')
-        st.image(image1, use_column_width=True)
+        st.image(image1, use_container_width=True)
         st.markdown("**Insight:** Seattle (SEA) shows relatively low average arrival delays compared to busier hubs like ATL and ORD.")
 
     with col2:
         st.subheader("Share of Flights by Airport")
         image2 = Image.open('charts/share_of_flights.png')
-        st.image(image2, use_column_width=True)
+        st.image(image2, use_container_width=True)
         st.markdown("**Insight:** ATL handles the largest share of total flights among the analyzed airports, reinforcing its role as a major U.S. hub.")
 
     st.markdown("---")  # Divider between rows
@@ -59,13 +59,13 @@ elif page == "Dashboard":
     with col3:
         st.subheader("Number of Flights by Airport")
         image3 = Image.open('charts/number_of_flights.png')
-        st.image(image3, use_column_width=True)
+        st.image(image3, use_container_width=True)
         st.markdown("**Insight:** Airports like ATL and DFW dominate in total flight volume, while SEA holds a steady mid-range position.")
 
     with col4:
         st.subheader("Departure Delay vs Arrival Delay")
         image4 = Image.open('charts/dep_vs_arr_delay.png')
-        st.image(image4, use_column_width=True)
+        st.image(image4, use_container_width=True)
         st.markdown("**Insight:** There is a strong positive relationship between departure and arrival delays — late departures often lead to late arrivals.")
 
     st.markdown("---")  # Divider between rows
@@ -76,13 +76,13 @@ elif page == "Dashboard":
     with col5:
         st.subheader("Flights Over Time (Monthly)")
         image5 = Image.open('charts/flights_over_time.png')
-        st.image(image5, use_column_width=True)
+        st.image(image5, use_container_width=True)
         st.markdown("**Insight:** Flight volumes show seasonal patterns, with dips likely related to external events (e.g., holidays, disruptions).")
 
     with col6:
         st.subheader("Cancellation Rate by Airport (%)")
         image6 = Image.open('charts/cancellation_rate_by_airport.png')
-        st.image(image6, use_column_width=True)
+        st.image(image6, use_container_width=True)
         st.markdown("**Insight:** Some airports experience higher cancellation rates, possibly due to regional weather patterns or congestion.")
 
 
